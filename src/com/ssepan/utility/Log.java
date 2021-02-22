@@ -35,6 +35,16 @@ public class Log
         _LogPath = logPath;
     }
 
+    private static String _PackageName = ""; //default(String); 
+    public static String getPackageName() 
+    {
+        return _PackageName;
+    }
+    public static void setPackageName(String packageName) 
+    {
+        _PackageName = packageName;
+    }
+
 
     /**
      *
@@ -82,7 +92,11 @@ public class Log
     {
         Logger logger;
         
-        logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME/*"package.name"*/);
+        if (Log.getPackageName() != "") {
+            logger = Logger.getLogger(Log.getPackageName());
+        } else {
+            logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+        }
         logger.log
         (
             level,
