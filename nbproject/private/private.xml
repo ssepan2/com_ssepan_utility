@@ -9,8 +9,6 @@
         <group name="Com_Ssepan_MvcConsole">
             <file>file:/home/ssepan/Documents/NetBeansProjects/Com.Ssepan.Utility/src/com/ssepan/utility/Log.java</file>
         </group>
-        <group name="Com_Ssepan_Mvc">
-            <file>file:/home/ssepan/Documents/NetBeansProjects/Com.Ssepan.Utility/src/com/ssepan/utility/Log.java</file>
-        </group>
+        <group name="Com_Ssepan_Mvc"/>
     </open-files>
 </project-private>
